@@ -25,13 +25,31 @@ WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 */
 
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css';
+import Header from './components/Header'
+import Nav from './components/Nav'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Resume from './components/Resume'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
-function App() {
+
+function App () {
+
+  const [currentPage, changePage ] = useState("About");
+
   return (
     <div>
+      <Header>
+        <Nav
+          currentPage={currentPage}
+          changePage={changePage}
+        ></Nav>
+      </Header>
+      <Footer></Footer>
    
     </div>
   );
