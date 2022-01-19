@@ -41,6 +41,22 @@ function App () {
 
   const [currentPage, changePage ] = useState("About");
 
+  const renderContent = () => {
+    switch (currentPage) {
+      case "About":
+        return <About />;
+      case "Portfolio":
+        return <Portfolio />;
+      case "Contact":
+        return <Contact />;
+      case "Resume":
+        return <Resume />;
+
+      default:
+        return <About />;
+    }
+  }
+
   return (
     <div>
       <Header>
@@ -49,6 +65,7 @@ function App () {
           changePage={changePage}
         ></Nav>
       </Header>
+      <main>{renderContent(currentPage)}</main>
       <Footer></Footer>
    
     </div>
