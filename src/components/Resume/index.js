@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <main>
       <h2 className="pb-3">Resume</h2>
-        <a href="">
+        <a href="../../assets/devsampleresume.pdf" download="sample-resume">
             Download Sample Resume
         </a>
         
