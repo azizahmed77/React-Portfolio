@@ -32,8 +32,11 @@ body {
   margin-left: var(--spacing-two);
 }
 
-.navActive {
-  color: var(--secondary);
+
+
+.profile-pic {
+	clip-path: circle();
+  width: 250px;
 }
 
 

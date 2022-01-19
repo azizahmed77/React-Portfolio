@@ -28,48 +28,19 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 import React, {useState} from 'react'
 import './App.css';
 import Header from './components/Header'
-import Nav from './components/Nav'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Resume from './components/Resume'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 
 
 function App () {
 
-  const [currentPage, changePage ] = useState("About");
-
-  const renderContent = () => {
-    switch (currentPage) {
-      case "About":
-        return <About />;
-      case "Portfolio":
-        return <Portfolio />;
-      case "Contact":
-        return <Contact />;
-      case "Resume":
-        return <Resume />;
-
-      default:
-        return <About />;
-    }
-  }
-
+  
   return (
     <div>
-      <Header>
-        <Nav
-          currentPage={currentPage}
-          changePage={changePage}
-        ></Nav>
-      </Header>
-      <main>{renderContent(currentPage)}</main>
+      <Header></Header>
       <Footer></Footer>
-   
     </div>
   );
 }
 
-export default App;
+export default App

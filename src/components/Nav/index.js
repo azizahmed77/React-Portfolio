@@ -3,17 +3,13 @@ import React from "react";
 const Nav = (props) => {
   const pages = ["About", "Portfolio", "Resume", "Contact"]
   return (
-  <nav>
-    <ul className="nav justify-content-center flex-row">
+  <nav className="bg-dark text-white py-3">
+    <h1 className="float-left font-weight-bold">Aziz Ahmed</h1>
+    <ul className="nav nav-pills justify-content-end flex-row ">
       {pages.map((page) => (
-        <li
-          className={ `mx-2${
-            props.currentPage === page && "nav-item"
-          }`}
-          key={page}
-        >
+        <li className= "nav-item">
           <a
-            href={"#" + page}
+            href={"#" + (page.toLowerCase())}
             onClick={() => props.changePage(page)}
             className={
               props.currentPage === page ? "nav-link active" : "nav-link"
