@@ -5,7 +5,7 @@ const Nav = (props) => {
   return (
   <nav className="bg-dark text-white py-3">
     <h1 className="float-left font-weight-bold">Aziz Ahmed</h1>
-    <ul className="nav nav-pills justify-content-end flex-row ">
+    <ul className="nav nav-pills justify-content-end">
       {pages.map((page) => (
         <li className= "nav-item">
           <a
