@@ -1,6 +1,6 @@
 import React from 'react';
 import Projects from '../Projects'
-import babyBrain from '../../assets/images/babybrain.png'
+import connectFour from '../../assets/images/connect-4.png'
 import kanyeQuotes from '../../assets/images/kanye.png'
 import codeQuiz from '../../assets/images/codequiz.png'
 import weatherDashboard from '../../assets/images/weather.png'
@@ -9,10 +9,10 @@ import runBuddy from '../../assets/images/run-buddy.png'
 const projectsArray = [
   {
     id: 1,
-    name: "BabyBrain",
-    image: babyBrain,
-    liveSite: "https://arcane-retreat-82910.herokuapp.com/home",
-    repo: "https://github.com/azizahmed77/baby-brain"
+    name: "Connect-Four",
+    image: connectFour,
+    liveSite: "https://cbc-connect-4.herokuapp.com/",
+    repo: "https://github.com/azizahmed77/connect-four"
   },
   {
     id: 1,
