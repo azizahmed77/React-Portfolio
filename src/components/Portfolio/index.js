@@ -2,10 +2,12 @@ import React from 'react';
 import Projects from '../Projects'
 import connectFour from '../../assets/images/connect-4.png'
 import kanyeQuotes from '../../assets/images/kanye.png'
-import codeQuiz from '../../assets/images/codequiz.png'
+import shopShop from '../../assets/images/shopshop.png'
 import weatherDashboard from '../../assets/images/weather.png'
 import taskmaster from '../../assets/images/taskmaster.png'
 import runBuddy from '../../assets/images/run-buddy.png'
+import deepThoughts from '../../assets/images/deepthoughts.png'
+
 const projectsArray = [
   {
     id: 1,
@@ -16,17 +18,17 @@ const projectsArray = [
   },
   {
     id: 1,
-    name: "Quote-Battle",
-    image: kanyeQuotes,
-    liveSite: "https://concord511.github.io/Quote-Battle/",
-    repo: "https://github.com/azizahmed77/Quote-Battle"
+    name: "Deep Thoughts",
+    image: deepThoughts,
+    liveSite: "https://arcane-depths-10773.herokuapp.com/",
+    repo: "https://github.com/azizahmed77/Deep-Thoughts"
   },
   {
     id: 1,
-    name: "Code Quiz",
-    image: codeQuiz,
-    liveSite: "https://azizahmed77.github.io/Code-Quiz/",
-    repo: "https://github.com/azizahmed77/Code-Quiz"
+    name: "Shop-Shop",
+    image: shopShop,
+    liveSite: "https://stark-beach-94885.herokuapp.com/",
+    repo: "https://github.com/azizahmed77/shop-shop-redux"
   },
 
   {
