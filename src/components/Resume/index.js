@@ -1,12 +1,13 @@
 import React from "react";
+import myResume from '../../assets/resume.pdf'
 
 
 const Resume = () => {
   return (
     <main>
       <h2 className="pb-3">Resume</h2>
-        <a href="../../assets/devsampleresume.pdf" download="sample-resume">
-            Download Sample Resume
+        <a href = {myResume} download="resume.pdf">
+            Download Resume
         </a>
         
       <div class="justify-content-center mt-5">
